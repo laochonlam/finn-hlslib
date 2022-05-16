@@ -497,6 +497,9 @@ void LabelSelect_Batch(stream<ap_uint<PECount * In_T::width> > & in,
     for(unsigned int topx = 0; topx < NumTop; topx++){
       out.write(toplabels[NumTop - topx - 1]);
     }
+    for(unsigned int topx = 0; topx < NumTop; topx++){
+      out.write(topval[NumTop - topx - 1]);
+    }
   }
 }
 
